@@ -10,7 +10,7 @@ module CloudWatchMetrics
 
     module ClassMethods
       def run(args)
-        new(parse_arguments(args)).run
+        new(**parse_arguments(args)).run
       end
     end
 
